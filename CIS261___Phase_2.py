@@ -8,7 +8,9 @@ def GetDatesWorked():
     #write the code to input fromdate and todate and return the values from the function.  
     #Prompt the user for the dates in the following format: mm/dd/yyyy
     #no validations are needed for this input, we will assume the dates are entered correctly
-
+    fromdate = input("Enter Start date (MM-DD-YYYY): ")
+    todate = input("Enter End date (MM-DD-YYYY): ")
+    return fromdate, todate
 
 
 
@@ -79,9 +81,9 @@ def PrintTotals(EmpTotals):
     print(f'Total Number Of Employees: {EmpTotals["TotEmp"]}')
     # write code to print TotalHrs, TotGrossPay, TotTax and TotNetPay from dictionary
     print(f'Total Hours Worked: {EmpTotals["TotHrs"]}')
-    print(f'Total Gross Pay: {EmpTotals["TotGrossPay"]}')
-    print(f'Total Income Tax: {EmpTotals["TotTax"]}')
-    print(f'Total Net Pay: {EmpTotals["TotNetPay"]}')
+    print(f'Total Gross Pay: {EmpTotals["TotGP"]}')
+    print(f'Total Income Tax: {EmpTotals["TotTx"]}')
+    print(f'Total Net Pay: {EmpTotals["TotNP"]}')
 
 
 
