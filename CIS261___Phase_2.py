@@ -55,7 +55,10 @@ def printinfo(EmpDetailList):
         # the following line of code assigns TotEmployees totals to dictionary 
         EmpTotals["TotEmp"] = TotEmployees
         # write code to assign TotHours, TotGrossPay, TotTax, and TotNetPay to corresponding dictionary item
-        EmpTotals["TotHours"] = 
+        EmpTotals["TotHrs"] = TotHours
+        EmpTotals["TotGP"] = TotGrossPay
+        EmpTotals["TotTx"] = TotTax
+        EmpTotals["TotNP"] = TotNetPay
 
 
 
@@ -75,6 +78,10 @@ def PrintTotals(EmpTotals):
     # the following line of code prints Total Employees from the dictionary
     print(f'Total Number Of Employees: {EmpTotals["TotEmp"]}')
     # write code to print TotalHrs, TotGrossPay, TotTax and TotNetPay from dictionary
+    print(f'Total Hours Worked: {EmpTotals["TotHrs"]}')
+    print(f'Total Gross Pay: {EmpTotals["TotGrossPay"]}')
+    print(f'Total Income Tax: {EmpTotals["TotTax"]}')
+    print(f'Total Net Pay: {EmpTotals["TotNetPay"]}')
 
 
 
@@ -103,7 +110,7 @@ if __name__ == "__main__":
         #printinfo(empname, hours, hourlyrate, grosspay, taxrate, incometax, netpay)
 
         #write code to insert fromdate, todate, empname, hours, hourlyrate, and taxrate into list EmpDetail
-
+        EmpDetail = [fromdate, todate, empname, hours, hourlyrate, taxrate ]
 
         #the following code appends the list EmpDetail to the list EmpDetailList
         EmpDetailList.append(EmpDetail)
